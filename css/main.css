@@ -1,0 +1,47 @@
+*{
+	font-family: Verdana, sans-serif;
+	/*border: solid;*/
+}
+
+h1 {
+	text-align: center;
+	color: #666
+}
+h2{
+	color: #f07c17;
+	font-size: 1.7em;
+	font-weight: 900;
+}
+h3{
+	color: #f07c17;
+}
+p{
+	color: #666;
+	line-height: 30px;
+	margin-top:32px;
+}
+li{
+	color: #666;
+	line-height: 32px;
+}
+.boxed{
+	border-style: solid;
+	border-width: 1px;
+	color: #ccc;
+	padding-top: 15px;
+	padding-left: 35px;
+	margin-bottom: 10px;
+}
+.title{
+	font-size: 50px;
+}
+.description {
+	margin-top: -20px;
+}
+.title-margin{
+	margin: 20px;
+	margin-left: -1px;
+}
+.topper{
+	margin-top: 30px;
+}
