@@ -2,46 +2,104 @@
 <html>
   <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Mockup Portfolio Page</title>
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/main.css">
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jQuery.js"></script>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </head>
   <body>
   		<div class="container">
-  			<div class="row">
-  				<div class="col-md-12 title-margin ">
-  					<h1 class="title">Orange Udacity Mug</h1>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-md-5">
-  					<img src="images/mug.png" alt="Udacity Orange Mug" class="img-responsive">
-  					<div class="col-md-12  topper boxed">
-  						<h2>Main Features</h2>
-  						<div class="topper">
-  						<ul>
-  							<li>Holds your favorite drink</li>
-  							<li>Energizing color</li>
-  							<li>Reminds you to learn</li>
-  						</ul>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="col-md-7 description">
-  					<h2>A Good Way to Start a Day</h2>
-  					<p>Bacon ipsum dolor sit amet shoulder drumstick spare ribs shank, magna in sirloin. Turducken dolore tempor irure tenderloin pork belly shankle. Excepteur in strip steak pork chop voluptate tongue, hamburger nostrud kevin enim nulla ut cow incididunt. Do pancetta swine hamburger incididunt in excepteur irure pig labore est venison dolor ex adipisicing. Labore capicola veniam, commodo corned beef ut non rump swine pork chop exercitation ball tip ham deserunt.<br>
-  						<p>
-					Ad tri-tip short loin anim beef ribs eu ball tip velit deserunt frankfurter sunt nisi filet mignon. Pork loin quis ham hock mollit cupidatat. Id ground round chuck jerky meatball laborum frankfurter short loin in biltong t-bone doner ea irure. Culpa ex ut id. Nostrud t-bone bresaola pariatur qui tri-tip pork chop, ribeye irure velit pork et in dolore.<br>
-					</p><p>
-					Bacon in sunt dolor fatback excepteur turkey chuck velit proident frankfurter quis. Nisi shank sirloin sed tenderloin. Magna short ribs kielbasa biltong minim. In esse t- bone est tail kielbasa dolor ullamco tongue mollit sint sirloin chuck venison anim. Short ribs dolore adipisicing, bresaola venison cupidatat short loin turducken biltong leberkas andouille elit ad in occaecat. Ground round pariatur cupidatat ham hock magna tempor ea jowl duis.</p></p>
+        <header>
+  			<div class="row headLine">
+            <div class="col-md-2 header">
+              <img src="images/UdacityLogo.png" alt="Udacity logo" class="img-responsive logo"/>
+            </div>
+    				<div class="col-md-10 header"> <!-- header -->
+    					<h1 class="title" id="header">Taylor Nodell</h1>
+              <h4 class ="sub"> Front End Ninja </h4>
+    				</div>
+          </div>
+        </header> 
+  			<div class="row"> <!-- large image-->
+  				<div class="col-md-12">
+  					<img src="images/wallpaper.jpg" alt="House From Up" class="img-responsive">
   				</div>	
-  			</div>	
+        </div>	
+      <div class="row">
+        <div class="col-md-12"> <!-- Three small images -->
+          <h3> Featured Work</h3>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-4 centered"> <!-- Three small images -->
+            <img src="images/cassowary.jpg" alt="Cassowary" class="img-responsive">
+               <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#myModal">
+                Cassowary
+              </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>  
+          <div class="col-md-4 centered">
+            <img src="images/croc.jpg" alt="Crocodile" class="img-responsive">
+            <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#myModal">
+              Crocodile
+              </button>
+                 
+          </div>
+          <div class="col-md-4 centered"> 
+            <img src="images/frogs.jpg" alt="Frogs" class="img-responsive">
+            <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#myModal">
+                Frog
+              </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>  
+          </div>
+           <!-- Button trigger modal -->
 
-  			
-  					
-  				
-
-
-  		</div>		
+         </div>
+        
   </body>
 </html>
